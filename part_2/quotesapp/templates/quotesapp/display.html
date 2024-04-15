@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for quote, tags in quotes %}
+    <ul>
+        <li>
+            <p>{{ quote.quote }}</p>
+            <a href="{% url 'authors:details' quote.author.id %}" role="button" class="primary outline">{{ quote.author.fullname }}</a>
+            {% for tag in tags %}
+            <a href="{% url 'tags:details' tag.id %}" role="button" class="secondary outline"># {{ tag.name }}</a>
+            {% endfor %}
+
+        </li>
+    </ul>
+    {% endfor %}
+
+<hr><br/>
+
+{% if quotes.has_previous %}
+    <a href="?page=1">&laquo First</a>
+    <a href="?page={{quotes.previous_page_number}}">Previous</a>
+
+{% endif %}
+
+Page {{quotes.number}} of {{quotes.paginator.num_pages}}
+
+{% if quotes.has_next %}
+    <a href="?page={{quotes.next_page_number}}">Next</a>
+    <a href="?page={{quotes.paginator.num_pages}}">Last &raquo</a>
+
+{% endif %}
+
+{% endblock %}

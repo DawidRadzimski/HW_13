@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="author-details">
+    <h1>Author Details</h1>
+    <div class="field">
+        <span>Full Name:</span>
+        <span>{{ author.fullname }}</span>
+    </div>
+    <div class="field">
+        <span>Date of Birth:</span>
+        <span>{{ author.born_date }}</span>
+    </div>
+    <div class="field">
+        <span>Place of Birth:</span>
+        <span>{{ author.born_location }}</span>
+    </div>
+    <div class="field">
+        <span>Description:</span>
+        <p>{{ author.description }}</p>
+    </div>
+</div>
+<h4>{{ author.fullname }}'s quotes:</h4>
+{% for quote in quotes %}
+    <ul>
+        <li>
+            <p>{{ quote.quote }}</p>
+        </li>
+    </ul>
+    {% endfor %}
+{% endblock %}

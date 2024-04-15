@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<b>Add new quote below or:</b> <a href="{% url 'quotesapp:scrape' %}" role="button" class="primary outline">Scrape quotes from quotes.toscrape.com</a>
+<form method="POST" action="{% url 'quotesapp:add' %}">
+    {% csrf_token %}
+    <div style="padding: 10px">
+        <label>Enter quote details:
+            {{form.as_p}}
+        </label>
+
+        <span>{{ form.errors.name }}</span>
+    </div>
+    <div class="grid">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+    </div>
+</form>
+
+{% endblock %}

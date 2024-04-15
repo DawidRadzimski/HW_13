@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Quotes tagged with:</h4><a href="{% url 'tags:details' sel_tag.id %}" role="button" class="secondary outline"># {{ sel_tag.name }}</a>
+{% for quote, tags in quotes %}
+<ul>
+    <li>
+        <p>{{ quote.quote }}</p>
+        <a href="{% url 'authors:details' quote.author.id %}" role="button" class="primary outline">{{ quote.author.fullname }}</a>
+        {% for tag in tags %}
+        <a href="{% url 'tags:details' tag.id %}" role="button" class="secondary outline"># {{ tag.name }}</a>
+        {% endfor %}
+
+    </li>
+</ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Note information</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'quotesapp/style.css' %}">
+</head>
+<body>
+<main class="container">
+    <nav style="margin-bottom: 20px; border-bottom: 2px solid; padding-left: 30px">
+        <ul>
+            <li><a href="/" role="button"> Home </a></li>
+            <li><a href="{% url 'authors:authors' %}" role="button"> Authors </a></li>
+            <li><a href="{% url 'quotesapp:quotes' %}" role="button"> Quotes </a></li>
+            <li><a href="{% url 'tags:tags' %}" role="button"> Tags </a></li>
+        </ul>
+        {% if user.is_authenticated %}
+        <ul>
+            <li><a href="{% url 'authors:add' %}" role="button">Add author</a></li>
+            <li><a href="{% url 'quotesapp:add' %}" role="button">Add quote</a></li>
+            <li><a href="{% url 'tags:add' %}" role="button">Add tag</a></li>
+        </ul>
+        <ul>
+            <li>Welcome <b>{{ user.username }}!</b></li>
+            <li><a href="{% url 'users:logout' %}" role="button">Logout</a></li>
+        </ul>
+        {% else %}
+        <ul>
+            <li><a href="{% url 'users:signup' %}" role="button">Sign Up</a></li>
+            <li><a href="{% url 'users:login' %}" role="button">Log in</a></li>
+        </ul>
+        {% endif %}
+    </nav>
+    {% block content %} {% endblock %}
+</main>
+</body>
+</html>
