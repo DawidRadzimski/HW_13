@@ -4,79 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce27956-c12c-4991-8120-24ad3490d7d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/part_1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part_1/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part_1/src/conf/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part_1/src/routes/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part_1/src/services/email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part_1/src/services/template/email_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part_2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/database/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/database/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/database/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/database/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/repository/contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/repository/contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/repository/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/repository/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/routes/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/routes/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/routes/contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/routes/contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_1/src/services/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/part_1/src/services/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/part_2/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/Pipfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/templates/authors/author.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/templates/authors/details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/templates/authors/display.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/authors/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/myquotes/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/myquotes/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/myquotes/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/myquotes/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/myquotes/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/static/quotesapp/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/templates/quotesapp/display.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/templates/quotesapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/templates/quotesapp/quote.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/quotesapp/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/scrap/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/scrap/scrap_quote_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/templates/tags/details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/templates/tags/display.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/templates/tags/tag.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/tags/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/templates/users/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/templates/users/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/part_2/users/views.py" beforeDir="false" />
-    </list>
+    <list default="true" id="bce27956-c12c-4991-8120-24ad3490d7d1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712867520706</updated>
       <workItem from="1712867522081" duration="1737000" />
-      <workItem from="1713113808810" duration="21078000" />
+      <workItem from="1713113808810" duration="21488000" />
     </task>
     <servers />
   </component>
