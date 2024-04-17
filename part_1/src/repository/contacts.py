@@ -1,8 +1,8 @@
 from typing import List
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, extract, and_
-from src.database.models import Contact
-from src.schemas import ContactIn, ContactUpdate
+from part_1.src.database.models import Contact
+from part_1.src.schemas import ContactIn, ContactUpdate
 from datetime import date, datetime, timedelta
 
 
